@@ -4,19 +4,19 @@
 # Example usage: python train.py --data coco128.yaml
 # parent
 # ├── yolov5
-# └── datasets
+# └── dataset_city
 #     └── coco128  ← downloads here (7 MB)
 
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: D:/Projects/Python/MGR/yolov5  # dataset root dir
-train: groceries_dataset/train_fixed.txt  # train images (relative to 'path') 128 images
-val: groceries_dataset/val_fixed.txt  # val images (relative to 'path') 128 images
-test: groceries_dataset/test_fixed.txt # test images (optional)
+path: D:/Projects/Python/MGR/yolov5/ # dataset root dir
+train: custom_dataset/train.txt  # train images (relative to 'path') 128 images
+val: custom_dataset/val.txt  # val images (relative to 'path') 128 images
+test: custom_dataset/test.txt # test images (optional)
 
 # Classes
-nc: 25  # number of classes
-names: ["beans", "cake", "candy", "cereal", "chips", "chocolate", "coffee", "corn", "fish", "flour", "honey", "jam", "juice", "milk", "nuts", "oil", "pasta", "rice", "soda", "spices", "sugar", "tea", "tomato_sauce", "vinegar", "water"]  # class names
+nc: 5  # number of classes
+names: ['bannana', 'cucumber', 'egg', 'milk', 'bun']  # class names
 
 
 # Download script/URL (optional)

@@ -16,30 +16,14 @@ def crop_img(object, img_path):
     width = float(object[3])
     height = float(object[4])
 
-    # img_h = pil_im_rotated.shape[0]
-    # img_w = pil_im_rotated.shape[1]
     img_h = img.shape[0]
     img_w = img.shape[1]
 
-#magic
-    # box_x = img_w * center_x
-    # box_y = img_h * center_y
-    # box_w = img_w * width
-    # box_h = img_h * height
-
-    #nowy
     left = int((center_x - width / 2) * img_w)
     right = int((center_x + width / 2) * img_w)
     top = int((center_y - height / 2) * img_h)
     bottom = int((center_y + height / 2) * img_h)
 
-#even more magic tu pewnie nie działa
-    # left = int((box_x - box_w / 2) * width)
-    # bottom = int((box_y + box_h / 2) * height)
-    # right = int((box_x + box_w / 2) * width)
-    # top = int((box_y - box_h / 2) * height)
-
-#nowy
     if left < 0:
         left = 0
     if right > img_w - 1:

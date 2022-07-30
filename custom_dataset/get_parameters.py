@@ -1,4 +1,3 @@
-
 def get_parameters(file):
     with open(file, "r") as f:
         list_of_parameter_lists = []

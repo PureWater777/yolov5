@@ -8,11 +8,15 @@
 
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: D:/Projects/Python/MGR/yolov5/dataset_city/city17 # dataset root dir
-train: images/train/ # train images (relative to 'path') 128 images
-val: images/val/  # val images (relative to 'path') 128 images
-# test:  # test images (optional)
+path: D:\Projects\Python\MGR\yolov5  # dataset root dir
+train: miki_dataset\train.txt # train images (relative to 'path') 128 images
+val: miki_dataset\val.txt  # val images (relative to 'path') 128 images
+test: miki_dataset\test.txt # test images (optional)
 
 # Classes
 nc: 5  # number of classes
-names: ['traffic_light', 'pedestrian_light', 'public_transport_stop', 'recycler_bin', 'timetable']  # class names
+names: ['scissors', 'stapler', 'pen', 'mobile_phone', 'mug']  # class names
+
+
+# Download script/URL (optional)
+# download: https://ultralytics.com/assets/coco128.zip
